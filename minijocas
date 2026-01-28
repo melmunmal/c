@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Mini Jocs d'Scratch'</title>
+      <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+    <h1>Mini Jocs d'Scratch' fet per Melvin</h1>
+    <hr>
+    <a href="joc1.html">Jooc 1</a><br>
+    <a href="https://scratch.mit.edu/projects/1234273498/fullscreen/">Jooc 2</a><br>
+    <a href="joc3.html">Jooc 3</a><br>
+    <a href="joc1.html">Jooc 4</a>
+    <hr>
+    <p>(cc) tontoelquelolea - 1BAt - 2026</p>
+
+</body>
+</html>
