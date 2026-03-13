@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+
+int main() {
+    int v[100] = {
+        
+        
+    };
+    int n;
+    printf("introduce tu número:");
+    scanf("%d",&n);
+    printf("%d\n", número(n));
+    return 0;
+}
+
