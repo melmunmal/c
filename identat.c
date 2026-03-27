@@ -1,37 +1,20 @@
 #include <stdio.h>
-int identitat(int m[][], int dimensio);
+
+int identitat(int m[10][10], int dimensio);
 
 int main() {
-    int i, j;
-    int matriu[5][5];
-    srand(time(NULL))
-
-    for(int i = 0; i < 5; i++)
-        for(int j = 0; j < 5; j++)
-            if(i == j) matriu[i][j] = 27;
-            else atriu[i][j] = 0;
-
-    // Imprimir la matriu
-    printf("Matriu 5x5 amb numeros aleatoris:\n");
-    for(int i = 0; i < 5; i++) {
-        for(int j = 0; j < 5; j++)
-            printf("%3d ", matriu[i][j]);
-        printf("\n");
-    }
-
+    int matriu[10][10] = { {1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
+    if(identitat(matriu,3)) printf("Identitat\n");
+    else printf("No identitat\n");
     return 0;
- }
+}
 
- int identitat(int m[][], int dimensio){
- int i, j, id;
- id = true;
- for(int i = 0; i < dimensio; i++)
-        for(int j = 0; j < dimensio; j++)
-            if(i == j) id = id && (m[i][j] == 1);
-            else id = id && (m[i][j] == 0);
-
- return id;
- }
-
-
-
+int identitat(int m[10][10], int dimensio){
+int i, j, esIdentitat;
+esIdentitat = 1; // Inicialitze la variable booleana a true
+for(i = 0; i < dimensio; i++)
+        for(j = 0; j < dimensio; j++)
+            if(i == j) esIdentitat = esIdentitat && (m[i][j] == 1);
+            else esIdentitat = esIdentitat && (m[i][j] == 0);
+return esIdentitat;
+}
