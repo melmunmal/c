@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int identitat(int m[10][10], int dimensio);
+int antidiagonal(int m[10][10], int dimensio);
+
+int main() {
+    int matriu[10][10] = { {1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}};
+    int matriu[10][10] = { {0, 0, 0, 1}, {0, 0, 1, 0}, {0, 1, 0, 0}, {1, 0, 0, 0}};
+    if(antidiagonal(matriu,4)) printf("Antidiagonal\n");
+    else printf("Altra matriu\n");
+    return 0;
+}
+
+int antidiagonal(int m[10][10], int dimensio){
+int i, j, anti;
+anti = 1; 
+for(i = 0; i < dimensio; i++)
+        for(j = 0; j < dimensio; j++)
+            if(i == j) antidiagonal = antidiagonal && (m[i][j] == 1);
+            else  antidiagonal =  antidiagonal && (m[i][j] == 0);
+return  antidiagonal;
+}
